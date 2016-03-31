@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used RelativeLayout along with GridLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fbf287"
+        android:id="@+id/gridLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select from the following options:"
+            android:id="@+id/textView"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:height="40dp"
+            android:gravity="center_vertical"
+            android:textColor="#220d9b"
+            android:layout_marginLeft="5dp"
+            android:layout_rowSpan="1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:id="@+id/checkBox"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:checked="false"
+            android:background="#7aeb7c"
+            android:layout_margin="3dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:id="@+id/checkBox2"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:checked="true"
+            android:background="#7aeb7c"
+            android:layout_margin="3dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:id="@+id/checkBox3"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:checked="false"
+            android:background="#7aeb7c"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter description:"
+            android:id="@+id/textView2"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:height="40dp"
+            android:gravity="center_vertical"
+            android:textColor="#220d9b"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button1"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_rowSpan="2"
+            android:background="#65ae4f"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:hint="Enter description here....."
+            android:height="40dp"
+            android:background="#fbc256"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginBottom="5dp" />
+
+    </GridLayout>
+
+</RelativeLayout>
